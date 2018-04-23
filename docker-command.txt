@@ -1,0 +1,5 @@
+sudo docker run --name gwas -d -v /mnt/volume-nyc1-01/mma:/root/input -e NUM_CPUS=8 nsilico/gwas-service 
+
+sudo docker run --name gwas -d -v /mnt/volume-nyc1-01/mma:/root/input -e NUM_CPUS=8 -e USE_SNIPPY=False -e USE_VCF=True -e USE_FASTA=False nsilico/gwas-service
+
+sudo docker run --name gwas -it -v /mnt/volume-nyc1-01/mma:/root/input -e NUM_CPUS=8 -e USE_SNIPPY=False -e USE_VCF=False -e USE_FASTA=True nsilico/gwas-service /bin/bash
