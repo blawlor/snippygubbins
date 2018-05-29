@@ -69,6 +69,7 @@ RUN apt-get install -y cpanminus \
                        vcftools \
                        make
 
+RUN cpanm Bio::SeqIO 
 
 ADD /snippy/binaries/noarch/snpEff /usr/local/bin/snpEff
 ADD /snippy/binaries/noarch/snpEff.jar /usr/local/bin/snpEff.jar

@@ -21,5 +21,6 @@ ADD ./main.py /root/code/main.py
 ADD ./run.sh /root/run.sh
 ENV NUM_CPUS 4
 ENV USE_SNIPPY True
+ENV USE_COMBINEVCF True
 ENV USE_GUBBINS True
 CMD ["./run.sh"]
