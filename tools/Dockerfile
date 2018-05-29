@@ -58,7 +58,7 @@ ADD ./smartpca /usr/local/bin
 RUN  chmod +x /usr/local/bin/smartpca
 
 # GATK
-ADD ./gatk-package-4.beta.3-48-g403ba13-SNAPSHOT-local.jar /usr/local/bin/gatk.jar
+#ADD ./gatk-package-4.beta.3-48-g403ba13-SNAPSHOT-local.jar /usr/local/bin/gatk.jar
 
 
 # Update the repository sources list
